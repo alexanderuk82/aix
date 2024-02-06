@@ -1,0 +1,17 @@
+@use "../colours/colours.scss";
+@use "../typography/typo.scss";
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--bg-main);
+	font-size: var(--text-base);
+	color: var(--gray-800);
+}
+

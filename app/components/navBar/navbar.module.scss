@@ -1,0 +1,26 @@
+@use "../../css/variables/variables.scss" as *;
+@use "../../css/utilities/index.scss" as *;
+
+.navContainer {
+	background-color: var(--bg-main);
+	box-shadow: var(--shadow-sm);
+	& .wrapper {
+		@extend %flexLine;
+		@extend %wrapper;
+		gap: 1rem;
+	}
+	padding: 0.8rem 0;
+}
+
+.search {
+	display: none;
+
+	@include responsive-tablet {
+		display: block;
+		width: 23rem;
+	}
+}
+.buttons {
+	@extend %flexLine;
+	gap: 1rem;
+}

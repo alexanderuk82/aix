@@ -1,0 +1,55 @@
+@import "../../../css/mixins/button.scss";
+
+// Base button styles
+// Including the mixin with two parameters
+.button--default {
+	@include button-styles("default", "md");
+}
+
+// Variant 'default'
+.button--default--sm {
+	@include button-styles("default", "sm");
+}
+
+.button--default--lg {
+	@include button-styles("default", "lg");
+}
+
+// Variant 'destructive'
+.button--destructive {
+	@include button-styles("destructive", "md");
+}
+
+.button--destructive--sm {
+	@include button-styles("destructive", "sm");
+}
+
+.button--destructive--lg {
+	@include button-styles("destructive", "lg");
+}
+
+// Variant 'outline'
+.button--outline {
+	@include button-styles("outline", "md");
+}
+
+.button--outline--sm {
+	@include button-styles("outline", "sm");
+}
+
+.button--outline--lg {
+	@include button-styles("outline", "lg");
+}
+
+// Variant 'secondary'
+.button--secondary {
+	@include button-styles("secondary", "md");
+}
+
+.button--secondary--sm {
+	@include button-styles("secondary", "sm");
+}
+
+.button--secondary--lg {
+	@include button-styles("secondary", "lg");
+}

@@ -1,0 +1,30 @@
+// Queries breakpoints
+
+$breakpoint-xs-width: 400px;
+$breakpoint-s-width: 768px;
+$breakpoint-m-width: 1024px;
+$breakpoint-l-width: 1540px;
+
+@mixin responsive-mobile-sm {
+	@media (min-width: #{$breakpoint-xs-width}) {
+		@content;
+	}
+}
+
+@mixin responsive-tablet {
+	@media (min-width: #{$breakpoint-s-width}) {
+		@content;
+	}
+}
+
+@mixin responsive-laptop {
+	@media (min-width: #{$breakpoint-m-width}) {
+		@content;
+	}
+}
+
+@mixin responsive-laptop-large {
+	@media (min-width: #{$breakpoint-l-width}) {
+		@content;
+	}
+}

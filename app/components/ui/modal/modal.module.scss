@@ -1,0 +1,74 @@
+@use "../../../css/variables/variables.scss" as *;
+@use "../../../css/mixins/link.scss" as *;
+@use "../../../css/utilities/index.scss" as *;
+
+.modalOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: hsla(215, 28%, 17%, 0.761);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+}
+
+.modal {
+	background-color: var(--white);
+	padding: space(10);
+	border-radius: space(2);
+	width: 90%;
+	max-width: space(98);
+	position: relative;
+	text-align: center;
+
+	& .top {
+		@extend %flexColumn;
+		gap: space(2);
+	}
+
+	& .content {
+		margin-top: space(4);
+		width: 100%;
+		@extend %flexColumn;
+		gap: space(4);
+
+		& > * {
+			width: 100%;
+		}
+		padding-inline: space(4);
+	}
+	& .closeButton {
+		position: absolute;
+		top: space(4);
+		right: space(4);
+		cursor: pointer;
+		border: none;
+		width: space(6);
+		height: space(6);
+		background-color: transparent;
+
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	& .modalIcon {
+		margin-bottom: space(3);
+	}
+	& .footer {
+		margin-top: space(4);
+		@extend %flexColumn;
+		& .primary {
+			@include link-style("primary");
+		}
+		& .secondary {
+			@include link-style("secondary");
+		}
+	}
+}

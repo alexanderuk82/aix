@@ -1,0 +1,13 @@
+@mixin link-style($type) {
+	text-decoration: none;
+
+	font-weight: 500;
+	@if $type == "primary" {
+		color: var(--teal-600);
+	} @else if $type == "secondary" {
+		color: var(--blue-600);
+	}
+	&:hover {
+		text-decoration: underline;
+	}
+}

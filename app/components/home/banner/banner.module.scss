@@ -1,0 +1,25 @@
+@use "../../../css/variables/variables.scss" as *;
+@use "../../../css/utilities/index.scss" as *;
+
+.banner {
+	min-height: 528px;
+	overflow: hidden;
+	border-radius: space(4);
+	transform: translateY(-4rem);
+	display: block;
+	max-width: 1260px;
+	text-align: center;
+	padding-inline: space(4);
+	margin: auto;
+
+	@include responsive-tablet {
+		transform: translateY(-6rem);
+	}
+
+	.bannerImage {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: space(4);
+	}
+}

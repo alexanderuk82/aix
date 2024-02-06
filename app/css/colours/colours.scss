@@ -1,0 +1,129 @@
+// Light Theme SCSS Variables
+$light-bg-main: #f6ffff;
+$light-blue-600: #2563eb;
+$light-emerald-800: #065f46;
+$light-gray-100: #f3f4f6;
+$light-gray-200: #e5e7eb;
+$light-gray-50: #f9fafb;
+$light-gray-500: #6b7280;
+$light-gray-800: #1f2937;
+$light-green-50: #f0fdf4;
+$light-sky-200: #bae6fd;
+$light-slate-200: #e2e8f0;
+$light-slate-600: #475569;
+$light-slate-700: #334155;
+$light-slate-800: #1e293b;
+$light-teal-600: #0d9488;
+$light-teal-700: #0f766e;
+$light-white: #ffffff;
+$light-yellow-50: #fefce8;
+$light-zinc-50: #fafafa;
+$light-destructive: #b91c1c;
+$light-destructive-hover: #991b1b;
+$light-destructive-background: #fee2e2;
+$light-shadow-sm: 0px 6px 15px 0px rgba(245, 245, 245, 0.9);
+
+// Dark Theme SCSS Variables
+$dark-bg-main: #091a28;
+$dark-emerald-800: #34d399;
+$dark-gray-100: #1a1a1a;
+$dark-gray-50: #121212;
+$dark-gray-200: #374151;
+$dark-gray-500: #9ca3af;
+$dark-gray-800: #e5e7eb;
+$dark-green-50: #064e3b;
+$dark-sky-200: #1e40af;
+$dark-slate-600: #d1d5db;
+$dark-slate-700: #282929;
+$dark-slate-800: #020617;
+$dark-teal-600: #0d9488;
+$dark-teal-700: #0db1a4;
+$dark-white: #ffffff;
+$dark-yellow-50: #fef9c3;
+$dark-zinc-50: #c0c0c1;
+$dark-destructive: #fecaca;
+$dark-destructive-hover: #cf2b2b;
+$dark-destructive-background: #7f1d1d;
+$dark-shadow-sm: 0px 9px 24px 0px rgba(245, 245, 245, 0.07);
+
+:root {
+	// =====================================
+	//  LIGHT THEME
+	// =====================================
+
+	// Primary background color
+	--bg-main: #{$light-bg-main};
+
+	// Blue shades
+	--blue-600: #{$light-blue-600};
+
+	// Emerald shades
+	--emerald-800: #{$light-emerald-800};
+
+	// Gray shades
+	--gray-100: #{$light-gray-100};
+	--gray-200: #{$light-gray-200};
+	--gray-50: #{$light-gray-50};
+	--gray-500: #{$light-gray-500};
+	--gray-800: #{$light-gray-800};
+
+	// Green shades
+	--green-50: #{$light-green-50};
+
+	// Sky shades
+	--sky-200: #{$light-sky-200};
+
+	// Slate shades
+	--slate-200: #{$light-slate-200};
+	--slate-600: #{$light-slate-600};
+	--slate-700: #{$light-slate-700};
+	--slate-800: #{$light-slate-800};
+
+	// Teal shades
+	--teal-600: #{$light-teal-600};
+	--teal-700: #{$light-teal-700};
+
+	// White color
+	--white: #{$light-white};
+
+	// Yellow shades
+	--yellow-50: #{$light-yellow-50};
+
+	// Zinc shades
+	--zinc-50: #{$light-zinc-50};
+
+	//Destructive
+	--destructive: #{$light-destructive};
+	--destructive-hover: #{$light-destructive-hover};
+	--destructive-background: #{$light-destructive-background};
+
+	//Elevated
+	--shadow-sm: #{$light-shadow-sm};
+}
+.dark {
+	// =====================================
+	//  DARK THEME
+	// =====================================
+
+	--bg-main: #{$dark-bg-main};
+	--emerald-800: #{$dark-emerald-800};
+	--gray-100: #{$dark-gray-100};
+	--gray-50: #{$dark-gray-50};
+	--gray-200: #{$dark-gray-200};
+	--gray-500: #{$dark-gray-500};
+	--gray-800: #{$dark-gray-800};
+	--green-50: #{$dark-green-50};
+	--sky-200: #{$dark-sky-200};
+	--slate-600: #{$dark-slate-600};
+	--slate-700: #{$dark-slate-700};
+	--slate-800: #{$dark-slate-800};
+	--teal-600: #{$dark-teal-600};
+	--teal-700: #{$dark-teal-700};
+	--white: #{$dark-white};
+	--yellow-50: #{$dark-yellow-50};
+	--zinc-50: #{$dark-zinc-50};
+	--destructive: #{$dark-destructive};
+	--destructive-hover: #{$dark-destructive-hover};
+	--destructive-background: #{$dark-destructive-background};
+	--shadow-sm: #{$dark-shadow-sm};
+}

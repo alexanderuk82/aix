@@ -1,0 +1,104 @@
+:root {
+	--text-xs: clamp(
+		0.625rem,
+		0.75rem + 1.2vw,
+		0.75rem
+	); // Starts at 10px, scales to 12px
+	--text-sm: clamp(
+		0.729rem,
+		0.875rem + 1.2vw,
+		0.875rem
+	); // Starts at 11.67px, scales to 14px
+	--text-base: clamp(
+		0.833rem,
+		1rem + 1vw,
+		1rem
+	); // Starts at 13.33px, scales to 16px
+	--text-lg: clamp(
+		0.938rem,
+		1rem + 1vw,
+		1.525rem
+	); // Starts at 15px, scales to 18px
+	--text-xl: clamp(
+		1.042rem,
+		1.25rem + 0.25vw,
+		1.25rem
+	); // Starts at 16.67px, scales to 20px
+	--text-2xl: clamp(
+		1.25rem,
+		1.5rem + 1.2vw,
+		2.5rem
+	); // Starts at 20px, scales to 24px
+	--text-3xl: clamp(
+		1.562rem,
+		1.875rem + 1.2vw,
+		1.875rem
+	); // Starts at 25px, scales to 30px
+	--text-4xl: clamp(
+		1.875rem,
+		2.25rem + 1.2vw,
+		2.25rem
+	); // Starts at 30px, scales to 36px
+	--text-5xl: clamp(
+		2.5rem,
+		3rem + 1.2vw,
+		3rem
+	); // Starts at 40px, scales to 48px
+	--text-6xl: clamp(
+		2.15rem,
+		2rem + 1.2vw,
+		4.25rem
+	); // Starts at 40px, scales to 60px
+	--text-7xl: clamp(
+		3.125rem,
+		4.5rem + 1.2vw,
+		4.5rem
+	); // Starts at 50px, scales to 72px
+	--text-8xl: clamp(
+		4.167rem,
+		6rem + 1.2vw,
+		6rem
+	); // Starts at 66.67px, scales to 96px
+	--text-9xl: clamp(5.556rem, 8rem + 0.25vw, 8rem); //
+}
+
+// Text sizes
+.text-xs {
+	font-size: var(--text-xs);
+}
+.text-sm {
+	font-size: var(--text-sm);
+}
+.text-base {
+	font-size: var(--text-base);
+}
+.text-lg {
+	font-size: var(--text-lg);
+}
+.text-xl {
+	font-size: var(--text-xl);
+}
+.text-2xl {
+	font-size: var(--text-2xl);
+}
+.text-3xl {
+	font-size: var(--text-3xl);
+}
+.text-4xl {
+	font-size: var(--text-4xl);
+}
+.text-5xl {
+	font-size: var(--text-5xl);
+}
+.text-6xl {
+	font-size: var(--text-6xl);
+}
+.text-7xl {
+	font-size: var(--text-7xl);
+}
+.text-8xl {
+	font-size: var(--text-8xl);
+}
+.text-9xl {
+	font-size: var(--text-9xl);
+}

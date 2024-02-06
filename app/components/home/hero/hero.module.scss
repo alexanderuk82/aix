@@ -1,0 +1,51 @@
+@use "../../../css/variables/variables.scss" as *;
+@use "../../../css/utilities/index.scss" as *;
+.hero {
+	height: 100vh;
+	background-image: url("../../../../public/imgHero-light.jpg");
+	background-size: cover;
+	background-position: top;
+	background-repeat: repeat-y;
+	display: flex;
+	& .heroContainer {
+		padding: space(4) space(6);
+		@extend %wrapper;
+		text-align: center;
+		@extend %flexColumn;
+		gap: 1rem;
+
+		.h1 {
+			font-size: var(--text-6xl);
+			& .heroHighlight {
+				color: var(--teal-600);
+				margin-left: space(2);
+			}
+		}
+		.heroText {
+			font-size: var(--text-lg);
+			margin-bottom: space(4);
+		}
+	}
+
+	.pieChart {
+		margin-top: space(4);
+		font-size: var(--text-sm);
+		text-align: left;
+		max-width: space(96);
+		padding: space(4) space(3);
+		background-color: var(--yellow-50);
+		@extend %flexLine;
+		border-radius: space(2);
+		border: 1px solid var(--slate-800);
+		box-shadow: var(--shadow-sm);
+		gap: space(2);
+	}
+	p.textDark {
+		color: var(--slate-800);
+	}
+}
+
+/* Background for dark theme */
+.dark {
+	background-image: url("../../../../public/imgHero-dark.jpg");
+}
